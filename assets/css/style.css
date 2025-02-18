@@ -73,8 +73,8 @@ footer {
     width: 80px;
 }
 
-.h-menu .container-fluid {
-    display: flow-root;
+.h-menu .container-fluid div:first-child {
+    display: contents;
 }
 
 a.active {
@@ -128,9 +128,9 @@ a.active {
         width: 50%;
     }
 
-    .h-menu .container-fluid {
+    /* .h-menu .container-fluid {
         display: flow-root;
-    }
+    } */
 
     .content-logo-texto {
         font-size: 20px;
@@ -173,8 +173,8 @@ a.active {
         font-size: 20px;
     }
 
-    .h-menu .container-fluid {
+    /* .h-menu .container-fluid {
         display: contents;
-    }
+    } */
 }
 
