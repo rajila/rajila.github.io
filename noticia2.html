@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aplicación de gestión de noticias</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="assets/js/bootstrap.min.js"></script>
+        <link href="assets/css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="">
+            <nav class="h-menu navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+                <div class="container-fluid">
+                    <div style="margin-left: 5px;">
+                        <a class="navbar-brand content-logo-img" href="index.html">
+                            <img class="rounded-circle" alt="Logo del negocio" src="assets/img/logo.png" />
+                        </a>
+                        <a class="navbar-brand content-logo-texto" href="index.html">Gestión de Noticias</a>
+                    </div>
+                    <button style="margin-right: 5px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+                        <menu class="navbar-nav menu-app">
+                            <li class="nav-item">
+                                <a title="Pagina Inicio" class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="noticia1.html">Noticia 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="noticia2.html">Noticia 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="noticia3.html">Noticia 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="noticia4.html">Noticia 4</a>
+                            </li>
+                        </menu>
+                        <div class="input-group mt-2 search-app">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary btn-search" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                  </svg>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container contenido">
+            <h2 class="text-center">¿Qué implicó la construcción y caída del Muro de Berlín para la historia?</h2>
+            <div class="row c-noticias" style="width: 100%;">
+                <div class="col c-noticias-main">
+                    <img style="width: 100%;" alt="¿Qué implicó la construcción y caída del Muro de Berlín para la historia?" src="assets/img/noticia2.png" />
+                    <p class="d-noticia">
+                        El Muro de Berlín fue una construcción física y simbólica que dividió a Alemania y, en muchos aspectos, al mundo. Levantado por la Alemania Oriental en 1961, el muro separó Berlín Oriental del Berlín Occidental, aislando a quienes vivían en el lado comunista de quienes estaban en el sector occidental, capitalista y democrático. Más allá de sus 155 kilómetros de cemento y alambradas, este muro se convirtió en un símbolo de la Guerra Fría y la tensa división ideológica 
+                        entre los bloques liderados por Estados Unidos y la Unión Soviética.
+                        Esta estructura comenzó a construirse en agosto de 1961 bajo la dirección del gobierno comunista de la República Democrática Alemana (RDA). En un inicio, se trataba de una simple alambrada que, en apenas días, se transformó en una barrera de hormigón armado. La construcción era una respuesta directa a la crisis migratoria que enfrentaba la RDA, ya que cientos de miles de alemanes orientales huían hacia Berlín 
+                        Occidental buscando mejores condiciones de vida y libertades políticas.
+                        <img class="right" alt="Muro de Berlín" src="assets/img/noticia2.1.webp" />
+                        A lo largo de las décadas, las transformaciones económicas entre Berlín Oriental y Berlín Occidental se volvieron cada vez más evidentes. En el Oeste, impulsada por una economía de mercado abierta y el apoyo financiero de Estados Unidos y Europa Occidental, la ciudad experimentó un rápido crecimiento y modernización. Berlín Occidental se convirtió en un modelo de 
+                        desarrollo capitalista en medio de un contexto socialista.
+                    </p>
+                    <p class="d-noticia">
+                        A propósito de los 30 años de la caída de muro que dividió las dos Alemanias, 
+                        un grupo sin fines de lucro envió a la Casa Blanca un pedazo de esa histórica 
+                        barrera al presidente de EEUU con un hermoso mensaje. Trump lo rechazó y ahora está frente a una sección de la barrera entre México y EEUU en San Ysidro.
+                    </p>
+                    <p class="d-noticia">
+                        Antes de la construcción del muro, Berlín Occidental era una vía de ç
+                        escape para miles de ciudadanos del Este. Las políticas restrictivas de la RDA, sumadas a la falta de libertades y oportunidades, incentivaban el deseo de huir. Muchas personas cruzaban a diario para trabajar en el sector occidental, pero regresaban al Este para vivir. Sin embargo, cuando los controles aumentaron, el éxodo se hizo masivo y permanente.
+                    </p>
+                    <p class="d-noticia">
+                        <img class="left" alt="Muro de Berlín" src="assets/img/noticia2.2.png" />
+                        En 1989, una serie de protestas pacíficas estallaron en Berlín Oriental y otras ciudades de la RDA. Los manifestantes eran claros; exigían reformas democráticas y la apertura de las fronteras. Estas concentracionees, organizadas por movimientos ciudadanos, congregaron a miles de personas, que mostraban un descontento sin precedentes. Las manifestaciones, conocidas como las Montagsdemonstrationen (manifestaciones de los lunes), presionaron al gobierno de la RDA. Estos, debilitados y 
+                        sin apoyo directo de Moscú, tuvieron que aceptar las peticiones de la ciudadanía.
+                    </p>
+                </div>
+                <div class="c-noticias-enlaces" style="width: 25%;">
+                    <h5>Enlaces relacionados</h5>
+                    <menu class="navbar-nav menu-app">
+                        <li class="nav-item">
+                            <a title="Donald Trump" class="" href="noticia1.html">Trump acepta reconstruir el Muro de Berlín</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="noticia3.html">El Real Madrid, con la historia a favor</a>
+                        </li>
+                    </menu>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="text-center py-5">
+            <div>Copyright © 2025 UAH - UX</div>
+        </footer>
+    </body>
+</html>

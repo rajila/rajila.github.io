@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aplicación de gestión de noticias</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="assets/js/bootstrap.min.js"></script>
+        <link href="assets/css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="">
+            <nav class="h-menu navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+                <div class="container-fluid">
+                    <div style="margin-left: 5px;">
+                        <a class="navbar-brand content-logo-img" href="index.html">
+                            <img class="rounded-circle" alt="Logo del negocio" src="assets/img/logo.png" />
+                        </a>
+                        <a class="navbar-brand content-logo-texto" href="index.html">Gestión de Noticias</a>
+                    </div>
+                    <button style="margin-right: 5px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+                        <menu class="navbar-nav menu-app">
+                            <li class="nav-item">
+                                <a title="Pagina Inicio" class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="noticia1.html">Noticia 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="noticia2.html">Noticia 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="noticia3.html">Noticia 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="noticia4.html">Noticia 4</a>
+                            </li>
+                        </menu>
+                        <div class="input-group mt-2 search-app">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary btn-search" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                  </svg>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container contenido">
+            <h2 class="text-center">La inteligencia artificial se convierte en arma de la ultraderecha en su batalla por el relato</h2>
+            <div class="row c-noticias" style="width: 100%;">
+                <div class="col c-noticias-main">
+                    <img style="width: 100%;" alt="La inteligencia artificial se convierte en arma de la ultraderecha en su batalla por el relato" src="assets/img/noticia4.jpeg" />
+                    <p class="d-noticia">
+                        El estrecho vínculo entre las élites tecnológicas y los movimientos ultraderechistas se ha puesto en primer plano, tras su escenificación en la toma de posesión de Donald Trump. Las big tech cuentan con importantes apoyos entre la extrema derecha, como ha reflejado el rechazo de los grupos ultraconservadores de la Eurocámara a la Ley de Servicios Digitales, diseñada para eliminar 
+                        los contenidos ilegales en redes sociales y combatir la desinformación.
+                        <img class="right" alt="Muro de Berlín" src="assets/img/noticia4.1.jpeg" />
+                        En este contexto, la ultraderecha ha encontrado en la inteligencia artificial (IA) y las redes sociales poderosas herramientas para manipular las narrativas, distorsionar hechos históricos y reforzar su agenda política. El diputado de Vox Manuel Mariscal Zabala aprovechó un pleno del Congreso para asegurar que "gracias a las redes sociales", los jóvenes ahora entienden el franquismo no como una época "oscura", sino como un periodo de "reconciliación y progreso". Lo hizo pocos meses antes de que 
+                        comenzase este 2025, en el que se cumplen 50 años de la muerte del dictador.
+                    </p>
+                    <p class="d-noticia">
+                        La UNESCO alerta del potencial desinformador de la IA en su informe ‘IA y Holocausto: ¿reescribiendo la historia?’. Determinados grupos, advierte, han manipulado los modelos de inteligencia artificial para glorificar la ideología nazi, por ejemplo, a través de la simulación de conversaciones con responsables del Holocausto. La aplicación Historical Figures, que permite a los usuarios chatear con personajes como Adolf Hitler o Joseph Goebbels, mediante IA. El sistema devuelve resultados como que Goebbels no estuvo involucrado intencionadamente 
+                        en el Holocausto y trató de prevenir la violencia contra los judíos.
+                    </p>
+                    <p class="d-noticia">
+                        <img class="left" alt="Muro de Berlín" src="assets/img/noticia4.2.jpeg" />
+                        Las aplicaciones de generación de deepfakes también son un problema. En foros como 4chan y otras redes sociales, circulan vídeos de celebridades como Emma Watson leyendo pasajes de Mein Kampf, ataviada con un uniforme nazi. Los nuevos modelos de IA permiten crear texto, audios, imágenes y videos falsos, lo que aumenta la dificultad para distinguir lo real de lo que no lo es. Esta desconfianza generalizada puede conducir a otra forma de desinformación: 
+                        convencer de que las imágenes del Holocausto están creadas por IA.
+                    </p>
+                </div>
+                <div class="c-noticias-enlaces" style="width: 25%;">
+                    <h5>Enlaces relacionados</h5>
+                    <menu class="navbar-nav menu-app">
+                        <li class="nav-item">
+                            <a title="Real Madrid" class="" href="noticia3.html">El Real Madrid, con la historia a favor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Muro de Berlin" class="" href="noticia2.html">¿Qué implicó la construcción y caída del Muro de Berlín para la historia?</a>
+                        </li>
+                    </menu>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="text-center py-5">
+            <div>Copyright © 2025 UAH - UX</div>
+        </footer>
+    </body>
+</html>
