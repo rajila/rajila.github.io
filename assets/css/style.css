@@ -38,7 +38,7 @@ footer {
     width: 35%;
     font-size: 5em;
     border-left: 1px solid rgba(32,32,32,0.8);
-    margin-left: 30px;
+    /*margin-left: 30px;*/
 }
 
 .c-noticias-enlaces {
